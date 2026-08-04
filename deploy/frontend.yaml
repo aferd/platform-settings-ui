@@ -38,6 +38,9 @@ objects:
             - id: platform-settings-ui
               title: Platform Settings
               href: /settings
+            - id: platform-settings-event-log
+              title: Event Log
+              href: /settings/eventlog
       API:
         versions:
           - v1
