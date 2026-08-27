@@ -96,7 +96,7 @@ export default defineMessages({
     id: 'settingsOverview.about.useCases.useCase2.description',
     description: 'Use case 2 description',
     defaultMessage:
-      "View a log of all fired events across your Organization, regardless of the alert notifiers you've enabled.",
+      'Configure alert notifications for your entire Organization. Determine which events trigger notifications, how they are delivered, and who receives them across all users.',
   },
   useCase2Button: {
     id: 'settingsOverview.about.useCases.useCase2.button',
@@ -113,7 +113,7 @@ export default defineMessages({
     id: 'settingsOverview.about.useCases.useCase3.description',
     description: 'Use case 3 description',
     defaultMessage:
-      'Sync up your data sources from other popular cloud providers including OpenShift Container Platform, Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), IBM Cloud, and Oracle Cloud Infrastructure.',
+      "View a log of all fired events across your Organization, regardless of the alert notifiers you've enabled.",
   },
   useCase3Button: {
     id: 'settingsOverview.about.useCases.useCase3.button',

@@ -26,7 +26,6 @@ import UserIcon from '@patternfly/react-icons/dist/js/icons/user-icon';
 import ColumnsIcon from '@patternfly/react-icons/dist/js/icons/columns-icon';
 import PortIcon from '@patternfly/react-icons/dist/js/icons/port-icon';
 import PageHeader from '@redhat-cloud-services/frontend-components/PageHeader';
-import Main from '@redhat-cloud-services/frontend-components/Main';
 // eslint-disable-next-line no-restricted-imports -- Page component needs chrome for document title
 import { useChrome } from '@redhat-cloud-services/frontend-components/useChrome';
 import { AppLink } from '../../../../../Components/AppLink';
@@ -68,6 +67,7 @@ const UseCaseRow: React.FC<UseCaseRowProps> = ({
               variant="plain"
               onClick={() => setIsExpanded(!isExpanded)}
               className="settings-overview-use-case-toggle"
+              aria-expanded={isExpanded}
             >
               <Flex
                 alignItems={{ default: 'alignItemsCenter' }}
@@ -86,8 +86,8 @@ const UseCaseRow: React.FC<UseCaseRowProps> = ({
             </Button>
           </FlexItem>
           <FlexItem>
-            <AppLink to={buttonLink}>
-              <Button variant="secondary">{buttonText}</Button>
+            <AppLink to={buttonLink} className="pf-v6-c-button pf-m-secondary">
+              {buttonText}
             </AppLink>
           </FlexItem>
         </Flex>
@@ -151,8 +151,8 @@ const AboutPage: React.FC = () => {
         </div>
       </PageHeader>
       <Divider />
-      <Main>
-        <Title headingLevel="h2" size="xl">
+      <section className="pf-v6-u-p-lg">
+        <Title headingLevel="h2" size="xl" className="pf-v6-u-mb-sm">
           {intl.formatMessage(messages.sectionHeading)}
         </Title>
         <Grid hasGutter>
@@ -266,17 +266,21 @@ const AboutPage: React.FC = () => {
               <CardBody>
                 <List isPlain>
                   <ListItem>
-                    <a href="#">
+                    <AppLink to="../alertmanager">
                       {intl.formatMessage(messages.recommendedItem1)}
-                    </a>
+                    </AppLink>
                   </ListItem>
                   <ListItem>
-                    <a href="#">
+                    <AppLink to="../data-integrations">
                       {intl.formatMessage(messages.recommendedItem2)}
-                    </a>
+                    </AppLink>
                   </ListItem>
                   <ListItem>
-                    <a href="#">
+                    <a
+                      href="https://access.redhat.com/documentation/en-us/red_hat_hybrid_cloud_console"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {intl.formatMessage(messages.recommendedItem3)}
                     </a>
                   </ListItem>
@@ -285,7 +289,7 @@ const AboutPage: React.FC = () => {
             </Card>
           </GridItem>
         </Grid>
-      </Main>
+      </section>
     </>
   );
 };
