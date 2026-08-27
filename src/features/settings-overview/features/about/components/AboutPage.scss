@@ -1,0 +1,40 @@
+// Settings Overview page header styles
+
+.settings-overview-header {
+  // Icon sizing to match other settings pages
+  .iconMinWidth-1-2-2 {
+    min-width: var(--pf-v6-global--spacer--3xl);
+
+    img {
+      width: var(--pf-t--global--icon--size--2xl);
+      height: var(--pf-t--global--icon--size--2xl);
+    }
+  }
+}
+
+.settings-overview-learn-more {
+  text-decoration: none;
+}
+
+// Use case expandable toggle
+.settings-overview-use-case-toggle {
+  text-align: left;
+  padding: 0;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+.settings-overview-use-case-body-expanded {
+  background-color: var(--pf-t--global--background--color--200);
+}
+
+.settings-overview-use-case-description {
+  background-color: var(--pf-t--global--background--color--100);
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+}
+
+.settings-overview-use-case-icon {
+  color: var(--pf-t--global--icon--color--brand--default);
+}
