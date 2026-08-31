@@ -25,6 +25,11 @@ const EventLogPage = lazy(
       /* webpackChunkName: "EventLogPage" */ './features/alert-manager/features/event-log/EventLogPage'
     ),
 );
+const AboutPage = lazy(() =>
+  import(
+    /* webpackChunkName: "AboutPage" */ './features/settings-overview/features/about'
+  ).then((module) => ({ default: module.AboutPage })),
+);
 
 const LandingPage = () => (
   <Bullseye>
@@ -40,6 +45,10 @@ const routes = [
   {
     path: 'eventlog',
     element: EventLogPage,
+  },
+  {
+    path: 'overview',
+    element: AboutPage,
   },
   {
     path: 'no-permissions',
