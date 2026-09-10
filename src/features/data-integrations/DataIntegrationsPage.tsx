@@ -14,7 +14,6 @@ import { useChrome } from '@redhat-cloud-services/frontend-components/useChrome'
 import { useAppNavigate } from '../../hooks/useAppNavigate';
 import AddDataIntegrationDropdown from './components/AddDataIntegrationDropdown';
 import messages from './messages';
-import '../../Components/PageHeaderIcon.scss';
 
 const DOCS_URL =
   'https://docs.redhat.com/en/documentation/red_hat_hybrid_cloud_console/1-latest/html-single/configuring_cloud_integrations_for_red_hat_services/index';

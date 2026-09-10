@@ -7,7 +7,6 @@ import Main from '@redhat-cloud-services/frontend-components/Main';
 import { useChrome } from '@redhat-cloud-services/frontend-components/useChrome';
 import AlertManagerTable from './AlertManagerTable';
 import messages from '../messages';
-import '../../../../../Components/PageHeaderIcon.scss';
 
 const NOTIFICATIONS_ICON =
   '/apps/frontend-assets/technology-icons/notifications.svg';

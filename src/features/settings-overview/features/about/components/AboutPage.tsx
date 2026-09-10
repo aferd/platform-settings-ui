@@ -30,7 +30,6 @@ import { useChrome } from '@redhat-cloud-services/frontend-components/useChrome'
 import { AppLink } from '../../../../../Components/AppLink';
 import messages from '../messages';
 import './AboutPage.scss';
-import '../../../../../Components/PageHeaderIcon.scss';
 
 const SETTINGS_ICON = '/apps/frontend-assets/technology-icons/settings.svg';
 

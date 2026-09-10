@@ -12,7 +12,6 @@ import { NotAuthorized } from '@redhat-cloud-services/frontend-components/NotAut
 import { useAppServices } from '../../../../shared/ServiceContext';
 import EventLogTable from './components/EventLogTable';
 import messages from './messages';
-import '../../../../Components/PageHeaderIcon.scss';
 
 type DatePreset = 'today' | 'yesterday' | 'last7' | 'last14';
 

@@ -4,10 +4,10 @@
 // line — a "Learn more" link under the title and subtitle — the column grows
 // and the icon drops by half that height, leaving it visibly lower than on a
 // two-line header like Event Log.
-//
+
 // Top-align it instead, so the icon lines up with the title regardless of how
 // many lines the text column has.
-//
+
 // The icon slot is the first child of PageHeader's Flex. Targeting it by
 // position is deliberate: its other class is a react-jss generated name
 // (`iconMinWidth-0-2-2`) whose counter suffix depends on stylesheet creation
