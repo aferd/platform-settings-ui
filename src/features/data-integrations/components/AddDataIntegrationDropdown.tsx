@@ -7,7 +7,6 @@ import {
   DropdownList,
 } from '@patternfly/react-core/dist/dynamic/components/Dropdown';
 import { MenuToggle } from '@patternfly/react-core/dist/dynamic/components/MenuToggle';
-import PlusCircleIcon from '@patternfly/react-icons/dist/js/icons/plus-circle-icon';
 import AddIntegrationWizard from './AddIntegrationWizard';
 import messages from '../messages';
 import type { SourceTypeName } from '../types';
@@ -62,7 +61,6 @@ const AddDataIntegrationDropdown: React.FC<AddDataIntegrationDropdownProps> = ({
             isExpanded={isOpen}
             isDisabled={isDisabled}
             variant="secondary"
-            icon={<PlusCircleIcon />}
           >
             {intl.formatMessage(messages.addDataIntegration)}
           </MenuToggle>

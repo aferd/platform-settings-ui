@@ -27,7 +27,7 @@ RHCLOUD-49532 delivered **the shell only**: routing, page header, tabs, and the
 
 ## Structure
 
-```
+```text
 data-integrations/
 ├── DataIntegrationsPage.tsx           # PageHeader + routed Tabs + <Outlet/>
 ├── DataIntegrationsPage.stories.tsx
@@ -75,7 +75,7 @@ preview-level default (`platform-settings`) would give the wrong basename.
 seed. When the data layer lands it follows the repo's TanStack Query convention, the same
 three-tier shape Alert Manager uses:
 
-```
+```text
 data-integrations/
 └── data/
     ├── api/sources.ts        # APIFactory wrapper over @redhat-cloud-services/sources-client
